@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-configuration>
+<session-factory>
+<!-- Related to the connection START -->
+<property name="connection.driver_class">oracle.jdbc.OracleDriver</property>
+<property name="connection.url">jdbc:oracle:thin:@localhost:1521/PDBORCL</property>
+<property name="connection.user">scott</property>
+<property name="connection.password">tiger</property>
+<!-- Related to the connection END -->
+<property name="show_sql">true</property>
+<property name="dialet">org.hibernate.dialect.Oracle12cDialect</property>
+<property name="hbm2ddl.auto">update</property>
+<mapping class="com.hibernate.samplehibernate.studentdetails" />
+</session-factory>
+</hibernate-configuration>
+
